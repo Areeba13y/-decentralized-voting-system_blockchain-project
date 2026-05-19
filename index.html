@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decentralized Voting System | DecodeLabs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🗳️ Decentralized Voting System</h1>
+        <p class="subtitle">Powered by Blockchain | DecodeLabs Batch 2026</p>
+
+        <div class="connect-section">
+            <button id="connectBtn" class="btn-primary">🔌 Connect MetaMask</button>
+            <p id="accountDisplay" class="account-info"></p>
+        </div>
+
+        <div class="admin-section" id="adminSection" style="display:none;">
+            <h2>⚙️ Admin Panel</h2>
+            <div class="input-group">
+                <input type="text" id="proposalName" placeholder="Proposal Name">
+                <button id="createProposalBtn" class="btn-secondary">Create Proposal</button>
+            </div>
+            <div class="input-group">
+                <input type="text" id="voterAddress" placeholder="Voter Address">
+                <input type="number" id="voterWeight" placeholder="Vote Weight">
+                <button id="authorizeBtn" class="btn-secondary">Authorize Voter</button>
+            </div>
+        </div>
+
+        <div class="voting-section">
+            <h2>📋 Proposals</h2>
+            <div id="proposalsList" class="proposals-grid"></div>
+        </div>
+
+        <div class="winner-section">
+            <h2>🏆 Winner</h2>
+            <button id="getWinnerBtn" class="btn-info">Get Winner</button>
+            <p id="winnerDisplay" class="winner-info"></p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
