@@ -1,7 +1,6 @@
 
-# -decentralized-voting-system_blockchain-project
 
-# 🗳️ Decentralized Voting System
+# 🗳️ Decentralized Voting System(BlockChain Project)
 
 ## Project Overview
 Blockchain-based voting system with tamper-proof records, double-voting prevention, and weighted voting.
